@@ -13,7 +13,7 @@ class ClientMock:
         self.i = 0
         while True:
             send_string = "hello " + str(self.i)
-            send_bytes = send_string.encode('utf-8')
+            send_bytes = send_string.encode('ascii')
             self.socket.send(send_bytes)
             print("sent '{}'".format(send_string))
             response_data = self.socket.recv(1024)
