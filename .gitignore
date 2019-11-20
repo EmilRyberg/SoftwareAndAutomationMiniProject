@@ -2,3 +2,7 @@
 *.opt
 
 PC/.idea/
+
+*.compileinfo
+
+*.~u
